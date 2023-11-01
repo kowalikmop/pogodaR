@@ -1,0 +1,24 @@
+  @font-face {
+    font-family: "rainbow_bold";
+    src: local("rainbow_bold"),
+      url("../fonts/rainbow_bold.ttf") format("truetype");
+  }
+  .header {
+    position: relative;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "rainbow_bold";
+  }
+  .header::after {
+
+    background: #ffbf00;
+    border-radius: 10px;
+    bottom: -4;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    width: 105px;
+
+  }
