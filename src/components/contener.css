@@ -27,36 +27,31 @@
     line-height: 18px;
 }  
 .article {
-    display: flex;
-    justify-content: space-around;
-    width: 900px;
+    display: grid;
+    grid-template-columns: 57px 200px 57px 200px 57px 200px;
+	grid-template-rows: 57px;
     margin-top: 10px;
 }
 .section {
-    display: flex;
-    width: 300px;
-    height: 55px;
+    display: grid;
+    grid-template-columns: 32px 20px;
+	grid-template-rows: 40px 17px;
+    margin-left: 5px;
 }
 .section__text {
-    display: flex;
-    align-items: top;
     font-size: 30px;
     font-weight: 400;
     line-height: 40px;
-    margin-left: 10px;
-    margin-right: 5px;
     color: #000000;
 }
-.section__picture {
-    display: flex;
-    align-items: center;
+.article__picture {
+
 }
 .section__picture--degrees {
-    align-items: baseline;
+
 }
 .section__text--title {
-    display: flex;
-    align-items: flex-end;
+    grid-column-end: span 3;
     font-size: 10px;
     line-height: 14px;
     color: #000000;
