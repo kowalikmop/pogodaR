@@ -69,8 +69,8 @@ export const data = {
 
 const Charts = (props) => {
   return (
-    <div style={{ display: props.name }}>
-      <Line options={options} data={data} />
+    <div>
+     {props.name && <Line options={options} data={data} />}
     </div>
   );
 };

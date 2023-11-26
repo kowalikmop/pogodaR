@@ -20,7 +20,7 @@ const Contener = () => {
       <div className="title">
         <div className="title__text">Średnia temperatura w {month[0]}</div>
         <div className="title__button" onClick={handleButton}>
-         {toggle ? "Rozwiń" : "Zwiń"}
+         {toggle ? "Zwiń" : "Rozwiń"}
         </div>
       </div>
       <div className="article">
