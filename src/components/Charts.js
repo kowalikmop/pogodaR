@@ -1,4 +1,3 @@
-import "./contener.css";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -35,7 +34,20 @@ export const options = {
   },
 };
 
-const labels = ["Sty", "Lut", "Mar", "Kwi", "Maj", "Cze", "Lip", "Sie", "Wrz", "Paz", "Lis", "Gru"];
+const labels = [
+  "Sty",
+  "Lut",
+  "Mar",
+  "Kwi",
+  "Maj",
+  "Cze",
+  "Lip",
+  "Sie",
+  "Wrz",
+  "Paz",
+  "Lis",
+  "Gru",
+];
 
 export const data = {
   labels,
@@ -55,12 +67,12 @@ export const data = {
   ],
 };
 
-const Contener = () => {
+const Charts = (props) => {
   return (
-    <div className="contener">
+    <div style={{ display: props.name }}>
       <Line options={options} data={data} />
     </div>
   );
 };
 
-export default Contener;
+export default Charts;
